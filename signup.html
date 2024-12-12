@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Peace Pathways</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        header {
+            background: #000;
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            height: 50px;
+            margin-right: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .nav-buttons button {
+            background: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin-left: 1rem;
+            cursor: pointer;
+            color: #000;
+        }
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Sign Up Page Styles */
+        #sign-up {
+            padding: 2rem;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .sign-up-form {
+            background: #fff;
+            padding: 2rem;
+            max-width: 500px;
+            margin: 0 auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ccc;
+        }
+        .sign-up-form input {
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .sign-up-form button {
+            background: #000;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .sign-up-form button:hover {
+            background: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="peace.png" alt="Logo">
+            <h1>Peace Pathways</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#become-member">Become a Member</a></li>
+            </ul>
+        </nav>
+        <div class="nav-buttons">
+            <button onclick="window.location.href='signup.html'">Sign Up</button>
+            <button onclick="window.location.href='memberpage.html'">Becam A Member</button>
+        </div>
+    </header>
+
+    <!-- Sign Up Section -->
+    <section id="sign-up">
+        <h2>Create Your Account</h2>
+        <p>Fill in the details below to create a new account and join our community!</p>
+
+        <div class="sign-up-form">
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Peace Pathways. All rights reserved.</p>
+    </footer>
+</body>
+</html>
